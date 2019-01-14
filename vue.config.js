@@ -3,6 +3,6 @@ module.exports = {
     disableHostCheck: true,
   },
   baseUrl: process.env.NODE_ENV === 'production'
-    ? '/evergrowth.group/'
+    ? '/'
     : '/',
 };
