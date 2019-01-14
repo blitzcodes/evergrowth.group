@@ -41,6 +41,7 @@
   .p-home__content {
     margin: 0 auto;
     text-align: center;
+    max-width: 90%
   }
 
   h1,
@@ -53,11 +54,19 @@
   h1 {
     font-size: 4rem;
     margin-top: .5rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 3rem;
+    }
   }
 
   h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: 640px) {
+      font-size: 1.75rem;
+    }
   }
 </style>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
