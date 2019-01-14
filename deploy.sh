@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+readonly __gitPath=git@github.com:blitzcodes/evergrowth.group.git
+
 # abort on errors
 set -e
 
@@ -7,7 +9,7 @@ git init
 git add -A
 git commit -m 'Refreshing Code Base'
 
-git push -f git@github.com:blitzcodes/vue-card-api-app.git master:master
+git push -f ${__gitPath} master:master
 
 # build
 npm run build
@@ -26,6 +28,6 @@ git commit -m 'Refreshing Site'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:blitzcodes/evergrowth.group.git master:gh-pages
+git push -f ${__gitPath} master:gh-pages
 
 cd -
