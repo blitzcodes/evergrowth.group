@@ -45,7 +45,7 @@
     /*margin: 50px auto;*/
     /*width: 800px;*/
     /*visibility: hidden;*/
-    text-shadow: 4px 4px 2px rgba(150, 150, 150, .5);
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, .333);
 
     @media screen and (max-width: 640px) {
       font-size: 1.5rem;
