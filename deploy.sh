@@ -5,11 +5,10 @@ readonly __gitPath=git@github.com:blitzcodes/evergrowth.group.git
 # abort on errors
 set -e
 
-git init
-git add -A
-git commit -m 'Refreshing Code Base'
-
-git push -f ${__gitPath} master:master
+#git init
+#git add -A
+#git commit -m 'Refreshing Code Base'
+#git push -f ${__gitPath} master:master
 
 # build
 npm run build
