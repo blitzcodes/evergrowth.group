@@ -1,28 +1,66 @@
 <template>
   <article class="p-home">
     <section class="p-home__content">
-      <Logo/>
-      <h1>Evergrowth</h1>
-      <h2>Mastermind</h2>
-      <AniText text="Learn, Evolve, Always."></AniText>
+      <header>
+        <Logo/>
+        <h1>Evergrowth</h1>
+        <h2>Mastermind</h2>
+      </header>
+      <!--<AniText text="Learn, Evolve, Always."></AniText>-->
+      <div class="o-card__list">
+        <div class="o-card informational">
+          <div>
+            <span class="o-card__date">Upcoming Talk</span>
+            <p style="margin-top: 0;">Saturday March 9, 2019 at 10am - 1pm EST</p>
+            <h3 class="o-card__title">Be The Change In Your Community</h3>
+            <div class="o-card__desc">
+              We will be continuing your engaging conversation from last month, looking to how we affect change in our
+              communities, by recognizing the struggles of modern society, and helping those in need.
+              <br><br>
+              <b>We look for to having you join us.</b> Or, have a listen! <a
+              href="https://meet.google.com/ayf-jnxf-nqk" target="_blank">Join the audio stream</a> on the 9th just past
+              10am to catch it live.
+            </div>
+          </div>
+        </div>
+        <div class="o-card" v-for="entry in recordings">
+          <div>
+            <span class="o-card__date" v-html="entry.date"></span>
+            <h3 class="o-card__title" v-html="entry.title"></h3>
+            <div class="o-card__desc" v-html="entry.desc"></div>
+          </div>
+          <div class="o-card__audio" v-html="entry.audio"></div>
+        </div>
+      </div>
     </section>
   </article>
 </template>
 
 <script>
-  import Logo from './Logo'
-  import AniText from './AniText'
+  import Logo from './Logo';
+  import AniText from './AniText';
+  import Player from './Player';
 
   export default {
     name: 'p-home',
     components: {
       Logo,
       AniText,
+      Player,
     },
-    data () {
-      return {}
+    data() {
+      return {
+        recordings: [
+          {
+            title: 'Managing Millennials',
+            date: 'Feb 2019 - Playback',
+            desc: 'We had a great talk in Millennials, and explored how we as adults helps created the problems we\'re trying to deal with around them, and thoughts on how to shift our focus around this.<br><br>Enjoy!',
+            audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/583683774%3Fsecret_token%3Ds-U9btg&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
+          },
+        ],
+      };
     },
-  }
+  };
 </script>
 
 <style lang="scss">
@@ -32,10 +70,20 @@
     display: flex;
     justify-items: center;
     align-items: center;
-
-    background: $c-brand-green;
-    height: 100vh;
     width: 100vw;
+    margin-top: 2rem;
+
+    a {
+      color: white;
+    }
+
+    header {
+      padding: 1rem;
+      border-radius: 100%;
+      width: 300px;
+      height: 200px;
+      margin: 0 auto 1rem;
+    }
   }
 
   .p-home__content {
@@ -52,20 +100,82 @@
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
     margin-top: .5rem;
-
-    @media screen and (max-width: 640px) {
-      font-size: 3rem;
-    }
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     margin-bottom: 1rem;
+  }
 
-    @media screen and (max-width: 640px) {
-      font-size: 1.75rem;
+  .o-card__list {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+  }
+
+  .o-card {
+    padding: 1rem;
+    background: rgba(74, 102, 118, 0.6);
+    border-radius: 5px;
+    text-align: left;
+    width: 600px;
+    max-width: 93%;
+    margin-bottom: 2rem;
+
+    @media (min-width: 640px) {
+      display: flex;
+    }
+
+    > div:nth-child(1) {
+      margin-bottom: 2rem;
+
+      @media (min-width: 640px) {
+        flex: 0 0 45%;
+        padding-right: 5%;
+        margin: 0;
+      }
+    }
+
+    &.informational > div:nth-child(1) {
+      margin: 0 !important;
+      flex: 0 0 100% !important;
+      padding: 0 !important;
+    }
+
+    > div:nth-child(2) {
+      flex: 0 0 50%;
+    }
+
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .o-card__date {
+      text-transform: uppercase;
+      font-size: 1rem;
+    }
+
+    .o-card__title {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .o-card__desc {
+      font-size: 1.15rem;
+      line-height: 1.5;
+    }
+
+    .o-card__audio {
+      @media (min-width: 640px) {
+        margin-top: 1rem;
+      }
+    }
+
+    iframe {
+      max-width: 100%;
     }
   }
 </style>

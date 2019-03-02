@@ -176,9 +176,11 @@
 </script>
 
 <style lang="scss">
+  $c-brand-green: rgb(53, 183, 41);
+
   .a-logo {
-    width: 180px;
-    height: 193px;
+    width: 90px;
+    height: 96.5px;
     position: relative;
     text-align: left;
     margin: 0 auto;
@@ -189,18 +191,18 @@
     top: 0;
     left: 0;
 
-    width: 172px;
-    height: 193px;
+    width: 86px;
+    height: 26.5px;
     /*transform: translate(149px, 92px);*/
   }
 
   .a-logo__brain {
     position: absolute;
-    top: 20px;
-    left: 43px;
+    top: 10px;
+    left: 21.5px;
 
-    width: 102px;
-    height: 78px;
+    width: 51px;
+    height: 39px;
     /*transform: translate(187px, 113px);*/
   }
 </style>

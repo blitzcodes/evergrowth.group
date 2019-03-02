@@ -12,9 +12,13 @@
   }
 </script>
 
-<style>
+<style lang="scss">
+  $c-brand-green: rgb(101, 138, 160);
+
   body {
     margin: 0;
+    background: $c-brand-green;
+    overflow-x: hidden;
   }
 
   #app {

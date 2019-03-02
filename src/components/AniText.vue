@@ -38,7 +38,7 @@
 
 <style lang="scss">
   .a-anitext {
-    font-size: 2rem;
+    font-size: 1.5rem;
     /*transform: translate3d(0, 0, 0);*/
     /*line-height: 36px;*/
     color: #fff;
