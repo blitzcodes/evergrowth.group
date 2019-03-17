@@ -8,7 +8,7 @@
       </header>
       <!--<AniText text="Learn, Evolve, Always."></AniText>-->
       <div class="o-card__list">
-        <div class="o-card informational">
+        <div class="o-card informational" style="display: none !important;">
           <div>
             <span class="o-card__date">Upcoming Talk</span>
             <p style="margin-top: 0;">Saturday March 9, 2019 at 10am - 1pm EST</p>
@@ -51,10 +51,16 @@
     data() {
       return {
         recordings: [
-          {
+          {//Evergrowth Mastermind - Mar 2019, Be The Change In Your Community
+            title: 'Be The Change In Your Community',
+            date: 'Mar 2019 - Playback',
+            desc: `We continued our engaging conversation from last month, looking to how we affect change in our communities, by recognizing the struggles of modern society, aspects that are driving us apart, and how to be more mindful of how we might enact change.<br><br>Enjoy!`,
+            audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/591274488&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
+          },
+          {//Evergrowth Mastermind - Feb 2019, Managing Millennials
             title: 'Managing Millennials',
             date: 'Feb 2019 - Playback',
-            desc: 'We had a great talk in Millennials, and explored how we as adults helps created the problems we\'re trying to deal with around them, and thoughts on how to shift our focus around this.<br><br>Enjoy!',
+            desc: `We had a great talk on Millennials, exploring how we as adults helped create the problems we're trying to address with them, and thoughts on how to shift our focus around this problem.<br><br>Enjoy!`,
             audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/583683774%3Fsecret_token%3Ds-U9btg&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
           },
         ],
