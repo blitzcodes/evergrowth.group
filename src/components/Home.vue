@@ -8,18 +8,16 @@
       </header>
       <!--<AniText text="Learn, Evolve, Always."></AniText>-->
       <div class="o-card__list">
-        <div class="o-card informational" style="display: none !important;">
+        <div class="o-card informational" style="">
           <div>
             <span class="o-card__date">Upcoming Talk</span>
-            <p style="margin-top: 0;">Saturday March 9, 2019 at 10am - 1pm EST</p>
-            <h3 class="o-card__title">Be The Change In Your Community</h3>
+            <p style="margin-top: 0;">Saturday June 8, 2019 at 10am - 1pm EST</p>
+            <h3 class="o-card__title">Are you a high performer, or just a workaholic?</h3>
             <div class="o-card__desc">
-              We will be continuing your engaging conversation from last month, looking to how we affect change in our
-              communities, by recognizing the struggles of modern society, and helping those in need.
+              We will be exploring a polarizing topic as we breakdown what it means to be a high performer, in life and professionally. We'll also be looking at where that line gets crossed, and the consequences that result from it. It's sure to be an enticing talk without a doubt.
               <br><br>
-              <b>We look for to having you join us.</b> Or, have a listen! <a
-              href="https://meet.google.com/ayf-jnxf-nqk" target="_blank">Join the audio stream</a> on the 9th just past
-              10am to catch it live.
+              <b>We look forward to having you join us.</b> Or, have a listen! <a
+              href="https://www.twitch.tv/evergrowthmastermind" target="_blank">Join the audio stream on Twitch</a> on the 8th at 10:30am to catch it live.
             </div>
           </div>
         </div>
@@ -51,17 +49,11 @@
     data() {
       return {
         recordings: [
-          {//Evergrowth Mastermind - Mar 2019, Be The Change In Your Community
-            title: 'Be The Change In Your Community',
-            date: 'Mar 2019 - Playback',
-            desc: `We continued our engaging conversation from last month, looking to how we affect change in our communities, by recognizing the struggles of modern society, aspects that are driving us apart, and how to be more mindful of how we might enact change.<br><br>Enjoy!`,
-            audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/591274488&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
-          },
-          {//Evergrowth Mastermind - Feb 2019, Managing Millennials
-            title: 'Managing Millennials',
-            date: 'Feb 2019 - Playback',
-            desc: `We had a great talk on Millennials, exploring how we as adults helped create the problems we're trying to address with them, and thoughts on how to shift our focus around this problem.<br><br>Enjoy!`,
-            audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/583683774%3Fsecret_token%3Ds-U9btg&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
+          {
+            title: 'The Power of Music over your Mind',
+            date: 'May 2019 - Playback',
+            desc: `We had a great talk exploring music, what it is and means, and why exactly it can move or inspire us. Through the lens of those who listen, and those who create it, we dig into the effect music has had in our lives, and how it's helped shape it and our mood.<br><br>Enjoy!`,
+            audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/624937179&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
           },
         ],
       };
