@@ -52,7 +52,7 @@
           {
             title: 'Are you a high-achiever, or just a workaholic?',
             date: 'June 2019 - Playback',
-            desc: `We will be explored a polarizing topic, as we broke down what it means to be a high performer, in life and professionally, too when you may instead have become a workaholic. We'll also be looking at where that line gets crossed, and the consequences that result from it. It was an enticing talk without a doubt.<br><br>Enjoy!`,
+            desc: `We explored a polarizing topic as we broke down what it means to be a high-achiever, in life and professionally, and when you may instead have become a workaholic. We'll also be looked at where that line gets crossed, and the consequences that result from it. It was an enticing talk without a doubt.<br><br>Enjoy!`,
             audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/633864405&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
           },
         ],
