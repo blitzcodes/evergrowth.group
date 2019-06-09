@@ -8,7 +8,7 @@
       </header>
       <!--<AniText text="Learn, Evolve, Always."></AniText>-->
       <div class="o-card__list">
-        <div class="o-card informational" style="">
+        <div class="o-card informational" style="display: none !important;">
           <div>
             <span class="o-card__date">Upcoming Talk</span>
             <p style="margin-top: 0;">Saturday June 8, 2019 at 10am - 1pm EST</p>
@@ -50,10 +50,10 @@
       return {
         recordings: [
           {
-            title: 'The Power of Music over your Mind',
-            date: 'May 2019 - Playback',
-            desc: `We had a great talk exploring music, what it is and means, and why exactly it can move or inspire us. Through the lens of those who listen, and those who create it, we dig into the effect music has had in our lives, and how it's helped shape it and our mood.<br><br>Enjoy!`,
-            audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/624937179&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
+            title: 'Are you a high-achiever, or just a workaholic?',
+            date: 'June 2019 - Playback',
+            desc: `We will be explored a polarizing topic, as we broke down what it means to be a high performer, in life and professionally, too when you may instead have become a workaholic. We'll also be looking at where that line gets crossed, and the consequences that result from it. It was an enticing talk without a doubt.<br><br>Enjoy!`,
+            audio: '<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/633864405&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>',
           },
         ],
       };
